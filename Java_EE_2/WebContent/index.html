@@ -5,15 +5,25 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="http://localhost:8080/Java_EE_2/Stat" method="post">
-    <label><b>Логин</b></label>
-    <input type="text" required="" placeholder="Введите логин" name="login" required>
+<div class="form__wrapper">
+   <form id="register" action="#">
+      <h1>Регистрация</h1>
+      <div class="fields">
+         <label for="login">Ваш логин:</label>
+         <input type="text" id="login" value="" placeholder="AmateR">
+         <span class="dot">*</span>
+      </div>
+      <div class="fields">
+         <label for="pass1">Пароль:</label>
+         <input type="password" id="pass1" value="" >
+         <span class="dot">*</span>
+      </div>
 
-    <label><b>Пароль</b></label>
-    <input type="password" placeholder="Введите пароль" name="password" required>
-	<button type="submit">Войти</button>
-
-</form>
+ 
+      <button type="submit" name="button" id="send">Отправить</button>
+   </form>
+</div>
+ 
 
 </body>
 </html>
